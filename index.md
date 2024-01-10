@@ -1,4 +1,4 @@
-#Hi, I'm Mia!
+# Hi, I'm Mia! <br/>
 *Welcome to my lab reports this quarter*
 
 *Topics in the course include:*
