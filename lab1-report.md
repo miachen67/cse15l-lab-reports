@@ -19,6 +19,7 @@ With a file as an argument:
 - The working directory is `/lecture1`, since it was changed to `/lecture1` in the previous step.
 - The system outputs an error saying that `de.txt` is not a directory.
 - `cd` only takes directories as arguments because it is trying to change directories. It cannot receive a file as an argument.
+<br/>
 
 ## `ls` command
 ![Image](ls.png)
@@ -38,8 +39,8 @@ With a file as an argument:
 - The working directory is still `/home`, since I haven't changed it.
 - The system prints out the path to the file I put in as an argument.
 - There is no error. ?????
+<br/>
 
-  
 ## `cat` command
 ![Image](cat.png)
 With no arguments:
