@@ -46,13 +46,13 @@ With a file as an argument:
 With no arguments:
 - The working directory is `/home`, which can be verified by typing `pwd` into the command line.
 - When you enter `cat` without any arguments, it defaults to reading things from the terminal; whatever is typed into the terminal will be outputted. 
-- There is no error.
+- There is an error because the command didn't receive any arguments. Instead it defaulted to printing what the user types into the command line afterwards.
 <br/>
 
 With a directory as an argument:
 - The working directory is `/home`, which can be verified by typing `pwd` into the command line.
 - The output tells us that `lecture1: Is a directory`. Since the `cat` command only reads the contents of **files**, it won't read the contents of lecture1.
-- There is no error.
+- There is an error because the `cat` command expected a file as the argument, not a directory.
 <br/>
   
 With a file as an argument:
