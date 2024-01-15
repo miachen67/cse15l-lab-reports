@@ -38,7 +38,7 @@ With a directory as an argument:
 With a file as an argument:
 - The working directory is still `/home`, since I haven't changed it.
 - The system prints out the path to the file I put in as an argument.
-- There is no error. ?????
+- There is an error because it prints the path to the file. `ls` is supposed to print the directories in the given argument, but because there aren't any directories under `de.txt`, it can not complete its job.
 <br/>
 
 ## `cat` command
