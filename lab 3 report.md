@@ -25,3 +25,6 @@ In this week's lab, we started our own servers!
 ![Image](ss4forlab3.png)
 - This is my terminal reaction that didn't require me to log in!
 
+## Reflections
+In these two weeks, I learned about how to run commands on another computer using the `ssh` command. We are able to use ssh to run programs on a remote shell in the `ieng6` servers. We also learned how to create a private/public key pair in order to log into the computers without our passwords!
+
