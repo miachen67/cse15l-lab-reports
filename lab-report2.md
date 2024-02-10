@@ -1,4 +1,4 @@
-# Lab 3 Report <br/>
+# Lab Report 2 <br/>
 In this week's lab, we started our own servers!
 
 ## ChatServer Code
@@ -20,7 +20,9 @@ In this week's lab, we started our own servers!
 ## SSH
 ![Image](ss3forlab3.png)
 - The private key is the one without the `.pub` ending, which would be `/home/.ssh/id_ed25519`.
-- The path to the public key is `/home/.ssh/id_ed25519.pub`.
+- The path to the public key locally is `/home/.ssh/id_ed25519.pub`.
+![Image](ss5forlab3.png)
+- The path to the public key remotely is `/home/linux/ieng6/oce/9f/mic048/.ssh/authorized_keys`.
 
 ![Image](ss4forlab3.png)
 - This is my terminal reaction that didn't require me to log in!
