@@ -46,8 +46,7 @@ static void reverseInPlace(int[] arr) {
     }
 }
 ```
-## Screenshot 1
-![Image](ss1forlab3.png)
+Before, there was only one array which posed a problem. For instance, when we are trying to update the last element to the original first element, the original first element has already been updated to the last element. In the fixed code, there is a new array where we can leave the input array as is when reversing it. Then we copy all the elements from the new array to the input array to get the desired result. 
 
 ## Reflections
 In these two weeks, I learned about how to run commands on another computer using the `ssh` command. We are able to use ssh to run programs on a remote shell in the `ieng6` servers. We also learned how to create a private/public key pair in order to log into the computers without our passwords!
