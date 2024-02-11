@@ -115,5 +115,24 @@ technical//biomed/1471-2105-3-6.txt:          readme.txt documentation file are 
 technical//biomed/1471-2105-3-4.txt:          conversions of .chp (.txt) for each individual profile
 ```
 This is interesting to see: `grep` only searches for the contents of a file, not the file names/extensions of files. It is not as useful when examining file names.
-
+## grep -r --exclude-dir
+```miachen@Mias-MacBook-Air-6 lab5 % grep -r --exclude-dir="911report" "World War II" technical/
+technical//government/Gen_Account_Office/Testimony_cg00010t.txt:With the U.S. entry into World War II, GAO faced enormous
+technical//government/Gen_Account_Office/d03232sp.txt:Since World War II, the Congress has clarified and expanded that
+technical//government/Gen_Account_Office/d01591sp.txt:20Since World War II, annual growth in GDP per capita has
+technical//government/Gen_Account_Office/d01591sp.txt:every 35 years. Since World War II, annual growth in GDP per capita
+technical//government/Media/It_Pays_to_Know.txt:Lee Kemp, a hearing-impaired World War II disabled vet, also was
+technical//plos/journal.pbio.0020101.txt:        coincidentally after World War II, was Konrad Lorenz (1966). Lorenz's thesis was greeted
+technical//plos/journal.pbio.0020067.txt:        defense—the cavity magnetron that may have turned the course of World War II.
+technical//plos/journal.pbio.0020067.txt:        Bernal, and Dorothy Hodgkin. The other was the pre-World War II work of William Astbury in
+technical//biomed/bcr583.txt:        Norwegian women who were adolescents during World War II,
+```
+## grep -r 
+```
+miachen@Mias-MacBook-Air-6 lab5 % grep -r --exclude-dir="911report" --exclude-dir="government" "World War II" technical/
+technical//plos/journal.pbio.0020101.txt:        coincidentally after World War II, was Konrad Lorenz (1966). Lorenz's thesis was greeted
+technical//plos/journal.pbio.0020067.txt:        defense—the cavity magnetron that may have turned the course of World War II.
+technical//plos/journal.pbio.0020067.txt:        Bernal, and Dorothy Hodgkin. The other was the pre-World War II work of William Astbury in
+technical//biomed/bcr583.txt:        Norwegian women who were adolescents during World War II
+```
 
