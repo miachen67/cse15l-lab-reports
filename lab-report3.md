@@ -193,3 +193,7 @@ technical//911report/chapter-2.txt
 ```
 `grep -l` tells us the file names of the files that match the given pattern.
 
+<br/> 
+## Sources
+I used the `man` function to see possible commands for `grep`. I also used ChatGPT to see how to combine multiple command-line options. It helped me learn how to combine options such as `-r` and `--exclude-dir` which I later extended to `-r` and `-c` and the following command-line options.
+![Image](ss2forlabreport3.png)
