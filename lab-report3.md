@@ -127,6 +127,7 @@ technical//plos/journal.pbio.0020067.txt:        defense—the cavity magnetron 
 technical//plos/journal.pbio.0020067.txt:        Bernal, and Dorothy Hodgkin. The other was the pre-World War II work of William Astbury in
 technical//biomed/bcr583.txt:        Norwegian women who were adolescents during World War II,
 ```
+`--exclude-dir` can be useful when we want to ignore a directory and not search inside it when giving `grep` a pattern to search for. 
 ## grep -r --exclude-dir for more than one directory
 ```
 miachen@Mias-MacBook-Air-6 lab5 % grep -r --exclude-dir="911report" --exclude-dir="government" "World War II" technical/
@@ -135,6 +136,8 @@ technical//plos/journal.pbio.0020067.txt:        defense—the cavity magnetron 
 technical//plos/journal.pbio.0020067.txt:        Bernal, and Dorothy Hodgkin. The other was the pre-World War II work of William Astbury in
 technical//biomed/bcr583.txt:        Norwegian women who were adolescents during World War II
 ```
+`--exclude-dir` can be used on multiple directories when we want to ignore them and not search inside them when giving `grep` a pattern to search for. 
+
 ## grep -r -c
 ```
 miachen@Mias-MacBook-Air-6 lab5 % grep -r -c --exclude-dir="biomed" --exclude-dir="plos" --exclude-dir="government" "World War II" technical/
@@ -156,18 +159,23 @@ technical//911report/chapter-12.txt:0
 technical//911report/chapter-10.txt:0
 technical//911report/chapter-11.txt:0
 ```
+`grep -c` can tell us how many times the given pattern appears in multiple files. 
+
 ## grep -c 
 ```
 miachen@Mias-MacBook-Air-6 lab5 % grep -c "World War II" technical/911report/chapter-2.txt
 1
 ```
+`grep -c` can tell us how many times the given pattern appears in a certain file. 
 ## grep -l
-```miachen@Mias-MacBook-Air-6 lab5 % grep -r -l "World War II" technical/911report
+```
+miachen@Mias-MacBook-Air-6 lab5 % grep -r -l "World War II" technical/911report
 technical/911report/chapter-13.5.txt
 technical/911report/chapter-13.1.txt
 technical/911report/chapter-3.txt
 technical/911report/chapter-2.txt
 ```
+`grep -l` tells us the file names of the files that match the given pattern.
 ## grep -l
 ```
 miachen@Mias-MacBook-Air-6 lab5 % grep -r -l "World War II" technical/         
@@ -183,3 +191,5 @@ technical//911report/chapter-13.1.txt
 technical//911report/chapter-3.txt
 technical//911report/chapter-2.txt
 ```
+`grep -l` tells us the file names of the files that match the given pattern.
+
