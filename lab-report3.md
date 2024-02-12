@@ -116,7 +116,8 @@ technical//biomed/1471-2105-3-4.txt:          conversions of .chp (.txt) for eac
 ```
 This is interesting to see: `grep` only searches for the contents of a file, not the file names/extensions of files. It is not as useful when examining file names.
 ## grep -r --exclude-dir
-```miachen@Mias-MacBook-Air-6 lab5 % grep -r --exclude-dir="911report" "World War II" technical/
+```
+miachen@Mias-MacBook-Air-6 lab5 % grep -r --exclude-dir="911report" "World War II" technical/
 technical//government/Gen_Account_Office/Testimony_cg00010t.txt:With the U.S. entry into World War II, GAO faced enormous
 technical//government/Gen_Account_Office/d03232sp.txt:Since World War II, the Congress has clarified and expanded that
 technical//government/Gen_Account_Office/d01591sp.txt:20Since World War II, annual growth in GDP per capita has
