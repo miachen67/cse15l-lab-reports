@@ -10,7 +10,7 @@
 **Lab Report Links**
 - [`ls`, `cat`, `cd` commands](lab1-report.md)
 - [servers!](lab-report2.md)
-- [more command-line options!](labreport3.md)
+- [more command-line options!](lab-report3.md)
 <br/>
 
 Find the link to the course syllabus [here](https://ucsd-cse15l-w24.github.io).
