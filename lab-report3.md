@@ -127,7 +127,7 @@ technical//plos/journal.pbio.0020067.txt:        defense—the cavity magnetron 
 technical//plos/journal.pbio.0020067.txt:        Bernal, and Dorothy Hodgkin. The other was the pre-World War II work of William Astbury in
 technical//biomed/bcr583.txt:        Norwegian women who were adolescents during World War II,
 ```
-## grep -r 
+## grep -r --exclude-dir for more than one directory
 ```
 miachen@Mias-MacBook-Air-6 lab5 % grep -r --exclude-dir="911report" --exclude-dir="government" "World War II" technical/
 technical//plos/journal.pbio.0020101.txt:        coincidentally after World War II, was Konrad Lorenz (1966). Lorenz's thesis was greeted
@@ -135,4 +135,51 @@ technical//plos/journal.pbio.0020067.txt:        defense—the cavity magnetron 
 technical//plos/journal.pbio.0020067.txt:        Bernal, and Dorothy Hodgkin. The other was the pre-World War II work of William Astbury in
 technical//biomed/bcr583.txt:        Norwegian women who were adolescents during World War II
 ```
-
+## grep -r -c
+```
+miachen@Mias-MacBook-Air-6 lab5 % grep -r -c --exclude-dir="biomed" --exclude-dir="plos" --exclude-dir="government" "World War II" technical/
+technical//911report/chapter-13.4.txt:0
+technical//911report/chapter-13.5.txt:1
+technical//911report/chapter-13.1.txt:1
+technical//911report/chapter-13.2.txt:0
+technical//911report/chapter-13.3.txt:0
+technical//911report/chapter-3.txt:4
+technical//911report/chapter-2.txt:1
+technical//911report/chapter-1.txt:0
+technical//911report/chapter-5.txt:0
+technical//911report/chapter-6.txt:0
+technical//911report/chapter-7.txt:0
+technical//911report/chapter-9.txt:0
+technical//911report/chapter-8.txt:0
+technical//911report/preface.txt:0
+technical//911report/chapter-12.txt:0
+technical//911report/chapter-10.txt:0
+technical//911report/chapter-11.txt:0
+```
+## grep -c 
+```
+miachen@Mias-MacBook-Air-6 lab5 % grep -c "World War II" technical/911report/chapter-2.txt
+1
+```
+## grep -l
+```miachen@Mias-MacBook-Air-6 lab5 % grep -r -l "World War II" technical/911report
+technical/911report/chapter-13.5.txt
+technical/911report/chapter-13.1.txt
+technical/911report/chapter-3.txt
+technical/911report/chapter-2.txt
+```
+## grep -l
+```
+miachen@Mias-MacBook-Air-6 lab5 % grep -r -l "World War II" technical/         
+technical//government/Gen_Account_Office/Testimony_cg00010t.txt
+technical//government/Gen_Account_Office/d03232sp.txt
+technical//government/Gen_Account_Office/d01591sp.txt
+technical//government/Media/It_Pays_to_Know.txt
+technical//plos/journal.pbio.0020101.txt
+technical//plos/journal.pbio.0020067.txt
+technical//biomed/bcr583.txt
+technical//911report/chapter-13.5.txt
+technical//911report/chapter-13.1.txt
+technical//911report/chapter-3.txt
+technical//911report/chapter-2.txt
+```
