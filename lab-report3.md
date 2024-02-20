@@ -11,7 +11,7 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{2, 1}, input2);
 }
 ```
-The test expected `{2, 1}` as the output but instead got `{2, 1}`. 
+The test expected `{2, 1}` as the output but instead got `{2, 2}`. 
 
 ## An input that doesn't induce a failure, as a JUnit test and any associated code
 
