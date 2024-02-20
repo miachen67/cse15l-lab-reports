@@ -5,11 +5,11 @@ In this week's lab, we debugged and used more commands!
 ## A failure-inducing input for the buggy program, as a JUnit test and any associated code.
 ```
 @Test 
-	public void testReverseInPlace() {
+public void testReverseInPlace() {
     int[] input2 ={1, 2};
     ArrayExamples.reverseInPlace(input2);
     assertArrayEquals(new int[]{2, 1}, input2);
-	}
+}
 ```
 The test expected `{2, 1}` as the output but instead got `{2, 1}`. 
 
@@ -17,11 +17,11 @@ The test expected `{2, 1}` as the output but instead got `{2, 1}`.
 
 ```
 @Test 
-	public void testReverseInPlace() {
+public void testReverseInPlace() {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
-	}
+}
 ```
 ## The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
 ![Image](ss1forlabreport3.png)
