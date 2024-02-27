@@ -13,7 +13,7 @@ Keys Pressed:
 cd<space>lab7 - cd into lab 7.
 bash<space>test.sh - to run the ListExamplesTests.java file.
 vim<space>ListExamples.java - to use vim to change ListExamples.java.
-G k k k k k k e r 2 :wq - `G` took me to the last line of the file, `k` to go up six lines, `e` to jump to the end of the first word "index1", `r 2` to replace the character 1 with 2.
+G k k k k k k e r 2 :wq - 'G' took me to the last line of the file, 'k' to go up six lines, 'e' to jump to the end of the first word "index1", 'r2' to replace the character 1 with 2, and ':wq' to save and exit.
 <up> <up> <ENTER> - the bash.sh command was 2 up so I used arrow for it.
 ```
 
