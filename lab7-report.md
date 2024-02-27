@@ -3,18 +3,22 @@ In this week's lab, we practiced using vim to make edits from the command line!
 
 ## Using vim to edit ListExamples.java from a forked repository
 ![Image](lab7ss1.png)
+``
+Keys Pressed: 
+ssh<space>mic048@ieng6.ucsd.edu - to log into the remote server.
+``
 ![Image](lab7ss2.png)
+``
+Keys Pressed: 
+cd<space>lab7 - cd into lab 7.
+bash<space>test.sh - to run the ListExamplesTests.java file.
+vim<space>ListExamples.java - to use vim to change ListExamples.java.
+G k k k k k k e r 2 :wq - `G` took me to the last line of the file, `k` to go up six lines, `e` to jump to the end of the first word "index1", `r 2` to replace the character 1 with 2.
+<up> <up> <ENTER> - the bash.sh command was 2 up so I used arrow for it.
+git<space>add<space>L<TAB> .java <ENTER> - using <TAB> autofilled ListExamples for me; this command added the changes in ListExamples.java to the staging area.
+git<space>commit<space>-m<space>"changed ListExamples.java" - this command committed the changes to my local repository.
+git<space>push - this command pushed the changes to the remote repository.
+``
+
 ![Image](lab7ss3.png)
 
-<br/> 
-Keys Pressed: 
-1. ssh mic048@ieng6.ucsd.edu
-2. git clone <Command> v : I had previously copied the ssh link to my clipboard.
-3. cd lab7
-4. bash test.sh
-5. vim ListExamples.java
-6. G k k k k k k e r 2 :wq
-7. <up> <up> <ENTER> The bash.sh command was 2 up so I used arrow for it.
-8. git add L<TAB> .java
-9. git commit -m "changed ListExamples.java"
-10. git push
