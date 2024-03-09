@@ -26,7 +26,7 @@ The bug was setting `int max = 0` at the beginning, rather than `Integer.MIN_VAL
 - test.sh
 ```
 **The contents of each file before fixing the bug** \
-Tester.java's contents: \
+Tester.java's contents: 
 ```
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -51,14 +51,14 @@ public class Tester {
   }
 }
 ```
-\
-test.sh's contents:  \
+
+test.sh's contents:  
 ```
 javac -g -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore Tester
 ```
-\
-findMax.java's contents:\
+
+findMax.java's contents:
 ```
 public class findMax{
     public static int findMax(int[] arr){
@@ -74,6 +74,7 @@ public class findMax{
 ```
 
 **The full command line (or lines) you ran to trigger the bug** \
-`bash test.sh` is the command that triggered the bug, specifically when the testAllNegatives test was run in my tester file.
+`bash test.sh` is the command that triggered the bug, specifically when the testAllNegatives test was run in my tester file. \
+
 **A description of what to edit to fix the bug** \
 The bug was setting `int max = 0` at the beginning, rather than `Integer.MIN_VALUE`. This is because if all of the elements in the input array were negative, none would be greater than 0 and as a result, 0 would be the max. You could also fix this by setting int max to equal the first element of the array.
