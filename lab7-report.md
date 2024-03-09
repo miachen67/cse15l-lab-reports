@@ -6,6 +6,7 @@ In this week's lab, we practiced using vim to make edits from the command line!
 ```
 Keys Pressed: 
 ssh<space>mic048@ieng6.ucsd.edu<ENTER> - to log into the remote server.
+git<space>clone<space>git@github.com:miachen67/lab7.git<ENTER> to clone the repository from my GitHub account
 ```
 ![Image](lab7ss2.png)
 ```
