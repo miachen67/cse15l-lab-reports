@@ -78,3 +78,9 @@ public class findMax{
 
 **A description of what to edit to fix the bug** \
 The bug was setting `int max = 0` at the beginning, rather than `Integer.MIN_VALUE`. This is because if all of the elements in the input array were negative, none would be greater than 0 and as a result, 0 would be the max. You could also fix this by setting int max to equal the first element of the array.
+
+
+</br>
+
+## Reflection
+Learning about Java's debugger - jdb - in this second half of the quarter was really interesting and helpful. I found myself using it in the CSE 12 programming assignments when I was getting weird outputs and wasn't sure what was going wrong. Being able to "step" through the program one line at a time is super helpful to see exactly where in my code is giving the error. 
