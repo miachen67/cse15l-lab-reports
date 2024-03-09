@@ -1,5 +1,4 @@
 ## Lab Report 5 - Debugging
-</br>
 
 **Student post** \
 <img width="438" alt="Screenshot 2024-03-09 at 1 29 21 PM" src="https://github.com/miachen67/cse15l-lab-reports/assets/147332750/6ca7c410-fe15-4a06-a852-a96a48668d1b"> \
@@ -12,8 +11,6 @@ It looks like your findMax method is returning 0 even though there is no 0 in yo
 <img width="245" alt="Screenshot 2024-03-09 at 1 39 52 PM" src="https://github.com/miachen67/cse15l-lab-reports/assets/147332750/32917353-adec-43ea-856b-866e65208afb"> \
 The bug was setting `int max = 0` at the beginning, rather than `Integer.MIN_VALUE`. This is because if all of the elements in the input array were negative, none would be greater than 0 and as a result, 0 would be the max. You could also fix this by setting int max to equal the first element of the array.
 
-
-</br> 
 
 ## Code Setup
 **The file & directory structure needed**
@@ -80,7 +77,6 @@ public class findMax{
 The bug was setting `int max = 0` at the beginning, rather than `Integer.MIN_VALUE`. This is because if all of the elements in the input array were negative, none would be greater than 0 and as a result, 0 would be the max. You could also fix this by setting int max to equal the first element of the array.
 
 
-</br>
 
 ## Reflection
 Learning about Java's debugger - jdb - in this second half of the quarter was really interesting and helpful. I found myself using it in the CSE 12 programming assignments when I was getting weird outputs and wasn't sure what was going wrong. Being able to "step" through the program one line at a time is super helpful to see exactly where in my code is giving the error. 
